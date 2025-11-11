@@ -25,7 +25,7 @@ main {
 
 #texto-destaque h1 {
     font-size: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #ff0038;
 }
 
@@ -57,7 +57,7 @@ main {
 }
 
 #conteudo img {
-    width: 120%;
+    width: 115%;
     height: auto;
     grid-area: 10/14/21/21; 
     position: relative;
@@ -67,27 +67,51 @@ main {
 }
 
 /* LADO DIREITO */
+
 #informativo {
-    padding: 30px;
-    background-color: #ffffff;
+    grid-template: repeat(20, 5%) / repeat(20, 5%);
+    display: grid;
 }
 
-#informativo h1 {
-    margin-bottom: 28px;
+#infoContador {
+    display: inline-block;
+    grid-area: 2/1/7/19;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
 }
 
-#informativo ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+img#bolsaSangue {
+    margin: 5px;
+    width: auto;
+    height:55%;
+    transform: scaleX(-1);
 }
 
-#informativo ul li h2 {
-    margin-bottom: 18px;
+#infoTransfusao {
+    display: inline-block;
+    grid-area: 8/1/14/19;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
 }
 
-#informativo ul li p {
-    font-size: 22px;
-    margin-top: 12px;
-    margin-bottom: 18px;
+#infoTipoSangue {
+    display: inline-block;
+    grid-area: 15/1/20/19;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+}
+
+#transfusaoSangue {
+    margin: 5px;
+    width: auto;
+    height:35%;
 }

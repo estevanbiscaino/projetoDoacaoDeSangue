@@ -55,7 +55,7 @@ header button:hover {
 /* MAIN */
 main {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 80% 20%;
 }
 
 footer {
