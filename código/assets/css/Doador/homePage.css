@@ -1,7 +1,11 @@
 main {
-    background: #f2f2f2;
-    display: flex;
-    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    min-height: 0;
+    overflow: auto;
+    width: 100%;
+    overflow-x: hidden;
+    gap: 0;
 }
 
 /* LADO ESQUERDO */
@@ -10,6 +14,11 @@ main {
     display: grid;
     grid-template: repeat(20, 5%) / repeat(20, 5%);
     position: relative;
+    min-height: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    grid-auto-flow: dense;
 }
 
 #texto-destaque {
@@ -19,22 +28,32 @@ main {
     align-items: flex-start;
     text-align: left;
     grid-area: 1/1/21/21;
-    border: 1px solid rgb(0, 0, 0);
     border-radius: 6px;
     background: white;
     padding: 40px;
+    overflow: auto;
+    width: 100%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 #texto-destaque h1 {
     font-size: 42px;
     margin-bottom: 10px;
     color: #ff0038;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 #texto-destaque p {
     font-size: 24px;
     margin-bottom: 10px;
     line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 65%;
+    box-sizing: border-box;
 }
 
 #texto-destaque p span {
@@ -45,12 +64,18 @@ main {
 #conteudo button {
     font-size: 24px;
     border-radius: 32px;
-    grid-area: 7/1/9/6;
+    grid-area: 8/1/9/6;
     padding: 10px;
     margin-left: 35px;
     background: #ff0038;
     border: 1px solid #000;
     color: white;
+    max-width: 100%;
+    width: auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    height: fit-content;
 }
 
 #conteudo button:hover {
@@ -59,13 +84,14 @@ main {
 }
 
 #conteudo img {
-    width: 115%;
+    width: 128%;
     height: auto;
     grid-area: 10/14/21/21; 
     position: relative;
     align-self: end;
     justify-self: end; 
-    top: 7px;
+    top: 5px;
+    z-index: 2;
 }
 
 /* LADO DIREITO */
@@ -77,7 +103,11 @@ main {
     min-width: 300px;
     gap: 20px;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    overflow: auto;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 #infoContador,
@@ -85,15 +115,18 @@ main {
 #infoTipoSangue {
     border-radius: 6px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
     text-align: center;
-    padding: 10px;
+    padding: 26px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     justify-content: center;
-    min-height: 220px;
+    min-height: 180px;
+    word-wrap: break-word;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 #bolsaSangue {
@@ -103,6 +136,6 @@ main {
 #infoContador img,
 #infoTransfusao img,
 #infoTipoSangue img{
-    max-width: 80px;
+    max-width: 60px;
     height: auto;
 }
