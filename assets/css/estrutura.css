@@ -1,96 +1,64 @@
+/* RESET */
+
 * {
     margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
+    font-family: "Urbanist", sans-serif;
+    background-color: #F7F4F4;
 }
 
-/* HEADER */
+/* HEADER TEMPLATE  */
+
 header {
+    width: 100%;
+    padding: 6px 15px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 12px;
-    height: 56px;
-    color: #ffffff;
-    background-color: #ff0038;
-    font-size: 1.25em;
-    flex-shrink: 0;
-    width: 100%;
-    box-sizing: border-box;
+    background: #b53636;
+    top: 0;
+    position: sticky;
 }
 
-header img {
-    width: 48px;
-    height: auto;
-}
-
-header ul {
+header nav ul {
     list-style: none;
     display: flex;
-    gap: 12px;
+    gap: 22px;
+    font-weight: 500;
 }
 
-header button {
-    border: none;
-    border-radius: 8px;
-    background-color: #ffffff;
-    color: #ff0038;
-    font-weight: 700;
-    font-size: 16px;
-    width: 85px;
-    height: 35px;
+header nav a {
+    text-decoration: none;
+    color: #F2F2F2;
 }
 
-header button:hover {
-    background-color: #f2f2f2;
-    cursor: pointer;
+header .logo-semfundo {
+    width: 45px;
 }
 
-/* MAIN */
-main {
-    flex: 1;
-    background-color: #f2f2f2;
-    min-height: 0;
-    width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
+/* MAIN - HERO */
+
+
+/* FOOTER */
 
 footer {
-    height: auto;
-    background-color: #ff0038;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 2px;
-    flex-shrink: 0;
+  background: #3A3333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F2F2F2;
+  gap: 10px;
 }
 
-@media (max-width: 600px) {
-    header ul {
-        display: none;
-    }
 
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: 80% auto;
-    }
+footer .gov-sp {
+    height: 25px;
 }

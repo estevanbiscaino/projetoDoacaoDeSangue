@@ -1,0 +1,148 @@
+/* HEADER ---------------------------------------------------------------------------------------------------------------------------- */
+
+header .btn-entrar {
+  color: #F7F4F4;
+  padding: 10px 15px;
+  border: 2px solid #8E2A2A;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "Urbanist", sans-serif;
+}
+
+
+
+/* MAIN - HERO ---------------------------------------------------------------------------------------------------*/
+main {
+    position: relative;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 40px 60px;
+    min-height: calc(100vh - 140px); 
+    z-index: 2;
+}
+
+/* TEXTOS DO LADO ESQURDO */
+.hero-text {
+    width: 65%; 
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto; 
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    color: #B53636;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #3A3333;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #222;
+}
+
+#hero-text-space {
+    height: 6.6rem;
+}
+
+.btn-doar {
+    background: #B53636;
+    color: #F7F4F4;
+    padding: 14px 30px;
+    border-radius: 6px;
+    width: 20rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* IMAGEM DO DOADOR */
+
+.hero-img {
+    position: absolute;
+    right: 35%;
+    bottom: 0;
+}
+
+.hero-img img {
+    width: 450px;   
+    display: block;
+    max-width: 45vw;
+}
+
+/* CARDS */
+
+.hero-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem; 
+    width: 30%; 
+    justify-content: center; 
+}
+
+.hero-cards .card {
+    background: #B53636;
+    padding: 0; 
+    border-radius: 30px; 
+    display: flex;
+    align-items: center; 
+    gap: 0; 
+    color: #F7F4F4;
+    overflow: hidden; 
+    min-height: 110px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.hero-cards .card:hover {
+    transform: scale(1.02); 
+}
+.hero-cards .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background-color: #F7F4F4;
+    border-radius: 30px;
+    transform: skewX(-0deg);
+    transform-origin: top right;
+    margin-right: -15px; 
+}
+
+.hero-cards .card img {
+    width: 110px; 
+    height: 100%;
+    padding: 28px; 
+    object-fit: contain;
+    flex-shrink: 0; 
+    position: relative;
+}
+
+.hero-cards .card p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    padding: 15px 25px 15px 15px; 
+    flex: 1;
+    position: relative;
+}
+
+/* FOOTER ---------------------------------------------------------------------------------------------------------------------------- */

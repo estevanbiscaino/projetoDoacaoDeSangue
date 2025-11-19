@@ -1,60 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/imgs/isologo-red.jpg">
-    <link rel="stylesheet" href="../assets/css/estrutura.css">
-    <link rel="stylesheet" href="../assets/css/Doador/homePage.css">
-
-
     <title>Sangue+</title>
+    <link rel="stylesheet" href="assets/css/estrutura.css">
+    <link rel="stylesheet" href="assets/css/doador/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="../assets/imgs/logosite.png" alt="Sangue+">
-        <ul>
-            <li>Início</li>
-            <li>Doar</li>
-            <li>Informações</li>
-            <li>Ajuda</li>
-        </ul>
-        <button>Entrar</button>
+        <img class="logo-semfundo" src="assets/img/logositeraw.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Agendamento</a></li>
+                <li><a href="#">Histórico</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-entrar">Entrar</a>
     </header>
-    <main>
-        <!-- LADO ESQUERDO -->
-        <div id="conteudo">
-            <div id="texto-destaque">
-                <h1>Um gesto simples, uma vida a mais.</h1>
-                <p>Com um simples gesto, você pode mudar o destino de alguém. Nós conectamos pessoas
-                    dispostas a ajudar com quem mais precisa. <b>Doe sangue, compartilhe vida.</b></p>
+
+        <main>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Um gesto simples, uma vida a mais.</h1>
+            <p>Com um simples gesto, você pode mudar o destino de alguém. <br>
+            Nós conectamos pessoas dispostas a ajudar com quem mais precisa.</p>
+            <div id="hero-text-space"> </div>
+            <h2>Doe sangue,<br>compartilhe vida!</h2>
+            <a href="#" class="btn-doar">Doar agora</a>
+        </div>
+        <div class="hero-cards">
+            <div class="card">
+                <img src="assets/img/frasco-sangue.png" alt="">
+                <p>A cada uma hora, <strong>29 pessoas</strong> precisaram de transfusão de sangue no Brasil.</p>
             </div>
 
-            <button>Doar agora</button>
-            <img src="../assets/imgs/ilustracao-doacao.png" alt="img">
-        </div>
+            <div class="card">
+                <img src="assets/img/mao-sangue.png" alt="">
+                <p>Uma simples doação de sangue pode salvar <strong>3 pessoas</strong></p>
+            </div>
 
-        <!-- LADO DIREITO -->
-        <div id="informativo">
-            <div id="infoContador">
-                <img src="../assets/imgs/bolsaSangue3.png" alt="Imagem ilustrativa">
-                 <p>Até o momento foram doadas <b>2873</b> bolsas de sangue através do site <b>Sangue+</b></p>
-            </div>
-            <div id="infoTransfusao">
-                <img src="../assets/imgs/transfusaoSangue2.png" alt="Imagem ilustrativa">
-                 <p>Desde que você acessou esse site, <b>29 pessoas</b> precisaram de uma <b>transfusão de sangue</b></p>
-            </div>
-            <div id="infoTipoSangue">
-                <img src="../assets/imgs/Sangue.png" alt="Imagem ilustrativa">
-                 <p>O seu tipo sanguíneo é <b>O+</b></p>
+            <div class="card">
+                <img src="assets/img/medida-sangue.png" alt="">
+                <p>Até o momento foram doadas <strong>2873 bolsas</strong> de sangue através do site Sangue+</p>
             </div>
         </div>
-    </main>
+    </section>
+            <div class="hero-img">
+            <img src="assets/img/homem-sentado.png" alt="Pessoa doando sangue">
+        </div>
+</main>
+
     <footer>
-        <p>© 2025 Posto de Saúde Vida Nova — Desenvolvido pela equipe Sangue+</p>
+        <img class="gov-sp" src="assets/img/governo-sp-logo.png" alt="">
+        <p>© 2025 Posto de Saúde Vida Nova | Sistema desenvolvido pela equipe Sangue+</p>
     </footer>
 </body>
-
 </html>
