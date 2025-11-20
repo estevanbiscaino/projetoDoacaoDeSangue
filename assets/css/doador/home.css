@@ -15,7 +15,7 @@ main {
 
 /* TEXTOS DO LADO ESQURDO */
 .hero-text {
-    width: 65%;
+    width: 50%;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ main {
     font-size: 1.8rem;
     line-height: 1.5;
     color: #3a3333;
-    margin-bottom: 6.8rem;
+    margin-bottom: 7em;
 }
 
 .hero-text h2 {
@@ -105,6 +105,7 @@ main {
     object-fit: contain;
     flex-shrink: 0;
     position: relative;
+    border-radius: 0px 30px 30px 0;
 }
 
 .hero-cards .card p {
@@ -118,7 +119,7 @@ main {
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
     /* === ELEMENTOS OCULTOS === */
-    nav li{
+    nav li {
         display: none;
     }
     .hero-img {
