@@ -81,11 +81,10 @@ main {
 
 .hero-cards .card {
     background: #b53636;
-    padding: 0;
+    padding-left: 6px;
     border-radius: 30px;
     display: flex;
     align-items: center;
-    gap: 0;
     color: #f7f4f4;
     overflow: hidden;
     min-height: 110px;
@@ -105,7 +104,7 @@ main {
     object-fit: contain;
     flex-shrink: 0;
     position: relative;
-    border-radius: 0px 30px 30px 0;
+    border-radius: 26px;
 }
 
 .hero-cards .card p {
