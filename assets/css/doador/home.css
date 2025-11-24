@@ -81,7 +81,7 @@ main {
     gap: 3.5rem;
     width: 30%;
     justify-content: center;
-    flex-shrink: 1; 
+    flex-shrink: 1;
 }
 
 .hero-cards .card {
@@ -121,7 +121,6 @@ main {
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-
     nav li {
         display: none;
     }
@@ -151,7 +150,13 @@ main {
     }
 
     .hero-text h1 {
-        font-size: 36px;
+        font-size: 42px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+        align-self: center;
+        margin-bottom: 1rem;
     }
 
     .hero-text {
@@ -175,9 +180,5 @@ main {
 
     .cards {
         transition: 0;
-    }
-
-    .hero-text p {
-        margin-bottom: 1rem;
     }
 }
