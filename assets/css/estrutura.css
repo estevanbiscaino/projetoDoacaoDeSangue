@@ -6,10 +6,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    height: 100vh;
     font-family: "Urbanist", sans-serif;
     background-color: #f7f4f4;
 }
@@ -107,6 +112,10 @@ footer .gov-sp {
 
 /*  === MOBILE === */
 @media (max-width: 768px) {
+
+    html, body {
+        overflow: auto;
+    }
 
     /* === HEADER === */
     #menu-hamburguer {

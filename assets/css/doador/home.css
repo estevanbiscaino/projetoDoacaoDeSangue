@@ -1,6 +1,9 @@
 /* MAIN - HERO ---------------------------------------------------------------------------------------------------*/
 main {
     position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
 }
 
 .hero {
@@ -9,7 +12,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 40px 60px;
-    min-height: calc(100vh - 140px);
+    height: 100%;
     z-index: 2;
 }
 
@@ -22,6 +25,7 @@ main {
     gap: 20px;
     height: auto;
     justify-content: center;
+    flex-shrink: 1;
 }
 
 .hero-text h1 {
@@ -34,7 +38,7 @@ main {
     font-size: 1.8rem;
     line-height: 1.5;
     color: #3a3333;
-    margin-bottom: 7em;
+    margin-bottom: 3em;
 }
 
 .hero-text h2 {
@@ -56,17 +60,17 @@ main {
 }
 
 /* IMAGEM DO DOADOR */
-
 .hero-img {
     position: absolute;
     right: 35%;
     bottom: 0;
+    flex-shrink: 1;
 }
 
 .hero-img img {
     width: 450px;
     display: block;
-    max-width: 45vw;
+    max-width: 35vw; /* reduzido para evitar scroll */
 }
 
 /* CARDS */
@@ -77,6 +81,7 @@ main {
     gap: 3.5rem;
     width: 30%;
     justify-content: center;
+    flex-shrink: 1; /* impede overflow */
 }
 
 .hero-cards .card {
@@ -90,6 +95,7 @@ main {
     min-height: 110px;
     position: relative;
     transition: transform 0.3s ease;
+    flex-shrink: 1;
 }
 
 .hero-cards .card:hover {
@@ -103,7 +109,6 @@ main {
     background-color: #f2f2f2f2;
     object-fit: contain;
     flex-shrink: 0;
-    position: relative;
     border-radius: 26px;
 }
 
@@ -112,12 +117,11 @@ main {
     line-height: 1.3;
     padding: 15px 25px 15px 15px;
     flex: 1;
-    position: relative;
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-    /* === ELEMENTOS OCULTOS === */
+
     nav li {
         display: none;
     }
@@ -129,12 +133,21 @@ main {
     }
 
     /* === HERO === */
-    /*hero-text*/
+    main {
+        height: auto;
+        overflow: visible;
+    }
+
+    .hero {
+        height: auto;
+    }
+
     section.hero {
         display: flex;
         flex-direction: column;
         padding: 32px 32px;
         width: 100%;
+        height: auto;
     }
 
     .hero-text h1 {
@@ -159,11 +172,12 @@ main {
         width: 100%;
         gap: 12px;
     }
+
     .cards {
         transition: 0;
     }
 
     .hero-text p {
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
     }
 }
