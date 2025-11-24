@@ -70,7 +70,7 @@ main {
 .hero-img img {
     width: 450px;
     display: block;
-    max-width: 35vw; /* reduzido para evitar scroll */
+    max-width: 35vw;
 }
 
 /* CARDS */
@@ -81,7 +81,7 @@ main {
     gap: 3.5rem;
     width: 30%;
     justify-content: center;
-    flex-shrink: 1; /* impede overflow */
+    flex-shrink: 1; 
 }
 
 .hero-cards .card {
