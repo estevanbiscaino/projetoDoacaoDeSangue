@@ -25,12 +25,12 @@
                 <li><a href="ajuda.html">Ajuda</a></li>
             </ul>
         </nav>
-        <a href="../Doador/dados.html">
-            <div id="userPerfil">
+        <div id="userPerfil">
+            <a href="../Doador/dados.html">
                 <p>Usuario</p>
-                <img class="perfil-foto" src="../../assets/img/foto-usuario.png" alt="Foto">
-            </div>
-        </a>
+            </a>
+            <img class="perfil-foto" src="../../assets/img/foto-usuario.png" alt="Foto">
+        </div>
         <!-- MENU HAMBURGUER -->
         <div id="menu-burguer">
             <input type="checkbox" id="menu-faketrigger">
@@ -53,11 +53,11 @@
 
     <main>
         <div id="container-agendamento">
-            
+
             <!-- LADO ESQUERDO: Calendário -------------------------------------------------->
             <section class="secao-calendario">
                 <h1 class="titulo-secao">Escolha uma data</h1>
-                
+
                 <!-- Nav do Mês -->
                 <div class="calendario-header">
                     <button class="nav-btn" aria-label="Mês anterior">&lt;</button>
@@ -77,10 +77,10 @@
                         <div class="dia-semana">SAB</div>
 
                         <!-- Dias do Mês (Dezembro 2025) -->
-                    
-                        
+
+
                         <!-- Novembro (final) -->
-                        <div class="dia inativo">30</div> 
+                        <div class="dia inativo">30</div>
 
                         <!-- Semana 1 -->
                         <div class="dia hoje disponivel" data-dia="1">1</div>
@@ -122,7 +122,7 @@
                         <div class="dia disponivel" data-dia="29">29</div>
                         <div class="dia disponivel" data-dia="30">30</div>
                         <div class="dia disponivel" data-dia="31">31</div>
-                        
+
                         <!-- Janeiro (início) -->
                         <div class="dia inativo">1</div>
                         <div class="dia inativo">2</div>
@@ -176,7 +176,9 @@
                 <div class="grupo-questionario">
                     <label>Questionário de saúde:</label>
                     <p class="texto-legal">
-                        Eu, Usuario, confirmo que não apresento gripe, febre, infecção bacteriana, COVID-19 recente, malária, não estou em recuperação de cirurgia e não realizei tatuagem ou piercing nos últimos 6 meses.
+                        Eu, Usuario, confirmo que não apresento gripe, febre, infecção bacteriana, COVID-19 recente,
+                        malária, não estou em recuperação de cirurgia e não realizei tatuagem ou piercing nos últimos 6
+                        meses.
                     </p>
                     <div class="checkbox-container">
                         <input type="checkbox" id="check-saude">
