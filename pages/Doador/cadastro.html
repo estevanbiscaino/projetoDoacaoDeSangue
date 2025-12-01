@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadstro</title>
+    <link rel="stylesheet" href="../../assets/css/estrutura.css">
+    <link rel="stylesheet" href="../../assets/css/Doador/cadastro.css">
+    <link href='https://cdn.boxicons.com/3.0.5/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        zrel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo-semfundo" src="../../assets/img/logositeraw.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+        <a href="../../pages/Doador/login.html" class="btn-entrar">Entrar</a>
+
+        <!-- MENU HAMBURGUER -->
+        <div id="menu-burguer">
+            <input type="checkbox" id="menu-faketrigger">
+
+            <label for="menu-faketrigger" id="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="menu-mobile">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- FORMULÁRIO -->
+        <form>
+            <h1>Crie sua conta</h1>
+            <p>Preencha seus dados para se tornar um doador</p>
+
+
+            <!-- DADOS PESSOAIS -->
+            <div id="dados-pessoais">
+
+                <h2 class="titulo-sessao">Dados Pessoais</h2>
+
+                <div class="nome-completo">
+                    <label for="nome-completo">Nome Completo</label>
+                    <input type="text" name="nome-completo" id="nome-completo">
+                </div>
+
+                <div id="lado-esquerdo">
+                    <div>
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf">
+                    </div>
+
+                    <div>
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="lado-direito">
+                    <div>
+                        <label for="data-nascimento">Data de Nascimento</label>
+                        <input type="date" name="data-nascimento" id="data-nascimento">
+                    </div>
+
+                    <div>
+                        <label for="Peso">Peso (kg)</label>
+                        <input type="text" name="Peso" id="peso" placeholder="Ex: 70,8">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+
+            <div id="cadastro-seguranca">
+
+                <div id="cadastro">
+                    <!-- Título Sessão -->
+                    <h2 class="titulo-sessao">Cadastro</h2>
+
+                    <!-- E-mail -->
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <!-- Celular -->
+                    <div>
+                        <label for="celular">Celular</label>
+                        <input type="text" name="celular" id="celular">
+                    </div>
+                </div>
+
+                <!-- ================================== -->
+
+                <div id="seguranca">
+                    <!-- Título Sessão -->
+                    <h2 class="titulo-sessao">Segurança</h2>
+
+                    <!-- Senha -->
+                    <div>
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <!-- Senha Confirmação -->
+                    <div>
+                        <label for="password">Repetir Senha</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+        <!-- =================================== -->
+
+        <!-- TRIAGEM -->
+        <section id="triagem">
+            <div id="container">
+
+                <h2 class="titulo-sessao">Triagem de Saúde*</h2>
+                <p>
+                    Você possui histórico de HIV, AIDS, Hepatite (A, B, C), Doença de Chagas,
+                    Sífilis, HTLV I/II, Câncer ou Diabetes tipo 1?
+                </p>
+
+                <div id="resposta">
+                    <label>
+                        <input type="radio" name="triagem" value="positivo">
+                        Sim, possuo.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="triagem" value="negativo">
+                        Não, estou apto.
+                    </label>
+                    <p id="impeditivo">*Impeditivo para cadastro.</p>
+                </div>
+            </div>
+
+            <button>CADASTRAR</button>
+            <p>Já possui uma conta?
+                <span>
+                    <a href="login.html">
+                        <strong> Entrar</strong>
+                    </a>
+                </span>
+
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <img class="gov-sp" src="../../assets/img/governo-sp-logo.png" alt="">
+        <p>© 2025 Posto de Saúde Vida Nova | Sistema desenvolvido pela equipe Sangue+</p>
+    </footer>
+
+
+</body>
+
+</html>

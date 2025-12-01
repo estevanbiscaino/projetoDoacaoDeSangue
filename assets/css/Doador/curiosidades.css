@@ -1,0 +1,134 @@
+/* Configuração do Main (igual às outras páginas) */
+main {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    overflow-y: auto;
+}
+
+#container-curiosidades {
+    width: 100%;
+    max-width: 1000px; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Títulos */
+.secao-titulo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.secao-titulo h1 {
+    font-size: 2.5rem;
+    color: #b53636;
+    margin-bottom: 10px;
+}
+
+.secao-titulo p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* --- GRID DE CARDS --- */
+.grid-curiosidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.card-icone img {
+    height: 6rem;
+    gap: 10px;
+}
+
+.card-titulo {
+    font-size: 1.4rem;
+    color: #b53636;
+    margin-bottom: 10px;
+}
+
+.card-texto {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* --- NOTÍCIA --- */
+.secao-noticia {
+    margin: 0;
+}
+
+.caixa-destaque {
+    background-color: #fcfcfc;
+    border: 2px solid #b53636;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 50px; 
+}
+
+.tag-importante {
+    background-color: #b53636;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.caixa-destaque h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.data-noticia {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.texto-noticia {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.link-fonte {
+    display: inline-block;
+    margin-top: 10px;
+    color: #b53636;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+
+    .grid-curiosidades {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-titulo h1 {
+        font-size: 2rem;
+    }
+}

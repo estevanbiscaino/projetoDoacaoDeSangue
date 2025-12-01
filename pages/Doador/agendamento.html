@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangue+</title>
+    <link rel="stylesheet" href="../../assets/css/estrutura.css">
+    <link rel="stylesheet" href="../../assets/css/Doador/agendamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo-semfundo" src="../../assets/img/logositeraw.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li class="nav-selecionado"><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+        <div id="userPerfil">
+            <p>Usuario</p>
+            <img src="#" alt="Foto" width="50px">
+        </div>
+        <!-- MENU HAMBURGUER -->
+        <div id="menu-burguer">
+            <input type="checkbox" id="menu-faketrigger">
+
+            <label for="menu-faketrigger" id="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="menu-mobile">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="container-agendamento">
+            
+            <!-- LADO ESQUERDO: Calendário -------------------------------------------------->
+            <section class="secao-calendario">
+                <h1 class="titulo-secao">Escolha uma data</h1>
+                
+                <!-- Nav do Mês -->
+                <div class="calendario-header">
+                    <button class="nav-btn" aria-label="Mês anterior">&lt;</button>
+                    <span class="mes-ano-label">Dezembro 2025</span>
+                    <button class="nav-btn" aria-label="Próximo mês">&gt;</button>
+                </div>
+
+                <div class="calendario-container-borda">
+                    <div class="calendario-grid">
+                        <!-- Semanas -->
+                        <div class="dia-semana">DOM</div>
+                        <div class="dia-semana">SEG</div>
+                        <div class="dia-semana">TER</div>
+                        <div class="dia-semana">QUA</div>
+                        <div class="dia-semana">QUI</div>
+                        <div class="dia-semana">SEX</div>
+                        <div class="dia-semana">SAB</div>
+
+                        <!-- Dias do Mês (Dezembro 2025) -->
+                    
+                        
+                        <!-- Novembro (final) -->
+                        <div class="dia inativo">30</div> 
+
+                        <!-- Semana 1 -->
+                        <div class="dia hoje disponivel" data-dia="1">1</div>
+                        <div class="dia disponivel" data-dia="2">2</div>
+                        <div class="dia disponivel" data-dia="3">3</div>
+                        <div class="dia disponivel" data-dia="4">4</div>
+                        <div class="dia disponivel" data-dia="5">5</div>
+                        <div class="dia disponivel" data-dia="6">6</div>
+
+                        <!-- Semana 2 -->
+                        <div class="dia disponivel" data-dia="7">7</div>
+                        <div class="dia disponivel" data-dia="8">8</div>
+                        <div class="dia disponivel" data-dia="9">9</div>
+                        <div class="dia disponivel" data-dia="10">10</div>
+                        <div class="dia disponivel" data-dia="11">11</div>
+                        <div class="dia disponivel" data-dia="12">12</div>
+                        <div class="dia disponivel" data-dia="13">13</div>
+
+                        <!-- Semana 3 -->
+                        <div class="dia disponivel" data-dia="14">14</div>
+                        <div class="dia disponivel" data-dia="15">15</div>
+                        <div class="dia disponivel" data-dia="16">16</div>
+                        <div class="dia disponivel" data-dia="17">17</div>
+                        <div class="dia disponivel" data-dia="18">18</div>
+                        <div class="dia disponivel" data-dia="19">19</div>
+                        <div class="dia disponivel" data-dia="20">20</div>
+
+                        <!-- Semana 4 -->
+                        <div class="dia disponivel" data-dia="21">21</div>
+                        <div class="dia disponivel" data-dia="22">22</div>
+                        <div class="dia disponivel" data-dia="23">23</div>
+                        <div class="dia disponivel" data-dia="24">24</div>
+                        <div class="dia disponivel" data-dia="25">25</div>
+                        <div class="dia disponivel" data-dia="26">26</div>
+                        <div class="dia disponivel" data-dia="27">27</div>
+
+                        <!-- Semana 5 -->
+                        <div class="dia disponivel" data-dia="28">28</div>
+                        <div class="dia disponivel" data-dia="29">29</div>
+                        <div class="dia disponivel" data-dia="30">30</div>
+                        <div class="dia disponivel" data-dia="31">31</div>
+                        
+                        <!-- Janeiro (início) -->
+                        <div class="dia inativo">1</div>
+                        <div class="dia inativo">2</div>
+                        <div class="dia inativo">3</div>
+                    </div>
+                </div>
+
+                <!-- Legenda -->
+                <div class="calendario-legenda">
+                    <div class="item-legenda">
+                        <span class="box-legenda hoje-legenda"></span>
+                        <span>Hoje</span>
+                    </div>
+                    <div class="item-legenda">
+                        <span class="box-legenda selecionado-legenda"></span>
+                        <span>Selecionado</span>
+                    </div>
+                    <div class="item-legenda">
+                        <span class="box-legenda disponivel-legenda"></span>
+                        <span>Disponível para agendamento</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LADO DIREITO: Detalhes ------------------------------------------->
+            <section class="secao-detalhes">
+                <h2 class="titulo-detalhes">Detalhes do agendamento</h2>
+
+                <div class="grupo-input">
+                    <label>Data selecionada:</label>
+                    <div class="input-fake">
+                        <img class="icone-pequeno" src="../../assets/img/calendario.png" alt="" srcset="">
+                        <span id="texto-data-selecionada">Selecione uma data...</span>
+                    </div>
+                </div>
+
+                <div class="grupo-horarios">
+                    <label>Horários disponíveis:</label>
+                    <div class="grid-horarios">
+                        <button class="btn-hora">12:00</button>
+                        <button class="btn-hora">12:30</button>
+                        <button class="btn-hora">13:00</button>
+                        <button class="btn-hora">15:00</button>
+                        <button class="btn-hora">16:00</button>
+                        <button class="btn-hora">16:30</button>
+                        <button class="btn-hora">18:00</button>
+                        <button class="btn-hora">21:00</button>
+                    </div>
+                </div>
+
+                <div class="grupo-questionario">
+                    <label>Questionário de saúde:</label>
+                    <p class="texto-legal">
+                        Eu, Usuario, confirmo que não apresento gripe, febre, infecção bacteriana, COVID-19 recente, malária, não estou em recuperação de cirurgia e não realizei tatuagem ou piercing nos últimos 6 meses.
+                    </p>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="check-saude">
+                        <label for="check-saude">Concordo com a afirmação acima</label>
+                    </div>
+                </div>
+
+                <button class="btn-confirmar">Confirmar agendamento</button>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <img class="gov-sp" src="../../assets/img/governo-sp-logo.png" alt="">
+        <p>© 2025 Posto de Saúde Vida Nova | Sistema desenvolvido pela equipe Sangue+</p>
+    </footer>
+
+
+</body>
+
+</html>

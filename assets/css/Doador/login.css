@@ -1,135 +1,236 @@
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin-right: 0px;
+/* CONTENT */
+main {
+    width: 900px;
+    height: 550px;
+    align-self: center;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: 50% auto;
+    border-radius: 12px;
+
+    user-select: none;
+    background: #b53636;
+    box-shadow: 0px 4px 12px 2px gray;
 }
-body {
+
+/* Visual */
+main section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px 0 0;
+    padding: 50px 0px 0px 20px;
+}
+
+section #idVisual {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f2f2f2;
+    gap: 20px;
 }
 
-/* CONTAINER */
-#pai {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    height: 480px;
-    position: relative;
-    border-radius: 40px 40px;
-    box-shadow: 0 10px 7px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    gap: 30px;
+section #idVisual img {
+    width: 100px;
 }
 
-/* CONTEUDO */
-#filho {
-    border-radius: 40px;
-    width: 100%;
-    height: 80%;
-    background: linear-gradient(to bottom, #e60026, rgb(150, 22, 50));
+section #idVisual h1 {
+    color: #ffffff;
+}
+
+section img#ilustracao {
+    margin-top: auto;
+    width: 400px;
+}
+
+/* Login */
+main form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 30px;
-    gap: 40px;
+
+    padding: 40px;
+    border-radius: 80px 12px 12px 80px;
+    background: #f7f4f4;
 }
 
-#filho::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: -28px;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 38px solid #e60026;
-}
-/* IDENTIDADE VISUAL */
-#logo {
-    border: 2px solid black;
-    width: 100%;
-    height: 90px;
+/* Saudações */
+main form h1 {
+    color: #b53636;
+    font-size: 40px;
+    text-align: center;
 }
 
-/* INPUTS */
-#inputs {
+/* Inputs */
+main form #inputs {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    gap: 36px;
-    border: 2px solid black;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
 }
 
 #inputs label {
     display: flex;
-    width: 100%;
+    align-items: center;
 }
-#inputs label i {
-    background-color: white;
-    border-radius: 8px 0px 0px 8px;
-    border-right: 2px solid #000000;
-    width: 34px;
-    height: 34px;
+#inputs label span {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 12px 0 0 12px;
+    height: 100%;
+    width: 50px;
+    background: #b53636;
 }
-
-#inputs label i svg {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px 0px 0px 8px;
-    color: #000000;
+#inputs label i {
+    font-size: 38px;
+    color: #ffffff;
 }
 
 #inputs label input {
-    font-size: 18px;
-    width: 220px;
-    height: 34px;
-    border-radius: 0px 8px 8px 0px;
-    border: none;
+    font-size: 22px;
+    outline: none;
+    height: 60px;
+    width: 320px;
+    padding: 20px;
+    border-radius: 0px 12px 12px 0;
+    border: 2px solid #b53636;
 }
 
-/* CADASTRO */
-#tubo {
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    width: 40px;
-    height: 50px;
-    border-radius: 0px 0px 16px;
-    border: 16px solid rgb(150, 22, 50);
-    border-left: none;
-    border-top: none;
-}
-
-#tubo::after {
-    content: "";
-    position: absolute;
-    bottom: -8%;
-    right: -13%;
-    width: 100%;
-    height: 108%;
-    background: #ffffff;
-    border-radius: 0 0 19px 0px;
-}
-
-button {
+#inputs label input::placeholder {
     font-size: 20px;
-    color: #ffffff;
-    font-weight: 600;
-    width: fit-content;
-    padding: 10px 20px;
-    position: relative;
-    border-radius: 8px;
-    border: none;
-    background-color: rgb(150, 22, 50);
+    color: #808080;
+}
+
+/* Esqueci minha senha */
+#inputs p {
+    align-self: flex-start;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #808080;
     cursor: pointer;
+}
+
+#inputs p:hover {
+    color: #000000;
+}
+
+/* Botão Login */
+form button {
+    color: #ffffff;
+    margin: auto 0;
+    font-size: 36px;
+    width: 250px;
+    height: 60px;
+    border-radius: 12px;
+    background: #b53636;
+    border: none;
+
+    cursor: pointer;
+}
+
+/* Cadastro */
+p#cadastro {
+    font-size: 20px;
+    color: #808080;
+}
+
+p#cadastro span a {
+    cursor: pointer;
+    color: #808080;
+    text-decoration: none;
+}
+
+p#cadastro span a:hover {
+    color: #b53636;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    /* Some a parte visual */
+    main section {
+        display: none;
+    }
+
+    /* MAIN RESPONSIVO */
+    main {
+        width: 360px;
+        height: auto;
+        margin: 20px auto;
+
+        display: flex;
+        justify-content: center;
+
+        box-shadow: 0px 4px 12px 2px gray;
+    }
+
+    /* FORM RESPONSIVO */
+    main form {
+        width: 100%;
+        background: #f7f4f4;
+        border-radius: 12px;
+        padding: 30px 20px;
+    }
+
+    /* TÍTULO */
+    f main form h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    /* INPUTS */
+    form #inputs {
+        width: 100%;
+        margin-top: 30px;
+        gap: 12px;
+    }
+
+    #inputs label {
+        width: 100%;
+    }
+
+    #inputs label span {
+        width: 45px;
+        height: 55px;
+        border-radius: 12px 0 0 12px;
+    }
+
+    #inputs label span i {
+        font-size: 30px;
+    }
+
+    #inputs label input {
+        width: 100%;
+        height: 55px;
+        font-size: 18px;
+        padding: 15px;
+        border-radius: 0 12px 12px 0;
+    }
+
+    /* TEXTO "ESQUECI MINHA SENHA" */
+    #inputs p {
+        font-size: 16px;
+    }
+
+    /* BOTÃO */
+    form button {
+        width: 100%;
+        height: 50px;
+        font-size: 26px;
+        margin-top: 20px;
+        border: none;
+    }
+
+    /* CADASTRO */
+    p#cadastro {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 300px;
+    }
 }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangue+</title>
+    <link rel="stylesheet" href="../../assets/css/estrutura.css">
+    <link rel="stylesheet" href="../../assets/css/Doador/ajuda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo-semfundo" src="../../assets/img/logositeraw.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li class="nav-selecionado"><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+        <div id="userPerfil">
+            <p>Usuario</p>
+            <img src="#" alt="Foto" width="50px">
+        </div>
+        <!-- MENU HAMBURGUER -->
+        <div id="menu-burguer">
+            <input type="checkbox" id="menu-faketrigger">
+
+            <label for="menu-faketrigger" id="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="menu-mobile">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+
+             <main>
+        <div id="container-ajuda">
+            
+            <section class="secao-titulo">
+                <h1>Central de Ajuda</h1>
+                <p>Tire suas dúvidas sobre o processo de doação e o uso do sistema Sangue+.</p>
+            </section>
+
+            <section class="faq-lista">
+                <h1>Cadastro e Acesso ao Sistema</h1>
+
+                <details class="faq-item">
+                    <summary>O que preciso para me cadastrar no Sangue+?</summary>
+                    <div class="faq-conteudo">
+                        <p>Para realizar o cadastro, você precisará informar seus dados e definir uma senha na área de <a href="#">Cadastre-se</a>. O sistema validará se o CPF, e-mail e celular são válidos.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Esqueci minha senha. Como faço para recuperar o acesso?</summary>
+                    <div class="faq-conteudo">
+                        <p>Você pode utilizar a opção de redefinição de senha na tela de <a href="login.html">login</a>. Será necessário confirmar a titularidade da sua conta para criar uma nova senha.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Posso alterar meus dados cadastrais depois de criar a conta?</summary>
+                    <div class="faq-conteudo">
+                        <p>Sim. Você pode visualizar <a href="#">seu perfil</a> e alterar informações como peso, e-mail, celular, endereço e sua foto de perfil. Algumas alterações passam por validação do sistema.</p>
+                    </div>
+                </details>
+
+                <h1>Requisitos de Saúde e Impedimentos</h1>
+                <details class="faq-item">
+                    <summary>Quais condições de saúde me impedem permanentemente de doar sangue?</summary>
+                    <div class="faq-conteudo">
+                        <p>Durante o cadastro, o sistema verifica se você possui certas condições. Você não poderá doar se tiver: HIV, AIDS, Hepatite (A, B ou C), Doença de Chagas, Sífilis, HTLV I e II, Câncer ou Diabetes tipo 1 insulinodependente.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Fiz uma tatuagem ou coloquei um piercing recentemente. Posso doar?</summary>
+                    <div class="faq-conteudo">
+                        <p>É necessário aguardar. Quem fez tatuagem, piercing ou maquiagem definitiva deve esperar 6 meses para realizar uma doação.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Tive COVID-19. Quando posso voltar a doar?</summary>
+                    <div class="faq-conteudo">
+                        <p>Você deve aguardar 15 dias após a recuperação completa dos sintomas para realizar um agendamento.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Estou tomando antibióticos ou estive doente recentemente. Posso agendar?</summary>
+                    <div class="faq-conteudo">
+                        <p>Não imediatamente. Se estiver com infecção bacteriana em tratamento com antibiótico, deve esperar 15 dias após o fim do tratamento. Em casos de gripe, resfriado ou febre, é necessário aguardar 7 dias após a melhora dos sintomas.</p>
+                    </div>
+                </details>
+
+                <h1>Agendamento de Doações</h1>
+                <details class="faq-item">
+                    <summary>Como faço para agendar uma doação?</summary>
+                    <div class="faq-conteudo">
+                        <p>Após <a href="login.html">entrar</a> na sua conta, você pode acessar a área de agendamento. O sistema verificará se você atende aos requisitos de idade e peso (normas do Ministério da Saúde) e se não há impedimentos de saúde. Você poderá visualizar as datas e horários disponíveis e escolher o melhor momento para você.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Qual é o intervalo mínimo entre uma doação e outra?</summary>
+                    <div class="faq-conteudo">
+                        <p>O sistema só permite o agendamento se você não tiver realizado outra doação nos últimos 3 meses.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Tive um imprevisto. Posso cancelar meu agendamento?</summary>
+                    <div class="faq-conteudo">
+                        <p>Sim, é possível cancelar o agendamento através do sistema. Ao fazer isso, o horário é liberado automaticamente para que outro doador possa utilizá-lo.</p>
+                    </div>
+                </details>
+                <h1>Outras funcionalidades</h1>
+                <details class="faq-item">
+                    <summary>Consigo ver quantas vezes já doei sangue?</summary>
+                    <div class="faq-conteudo">
+                        <p>Sim. O doador tem acesso ao histórico das últimas 10 doações realizadas, contendo as informações registradas pelos funcionários no momento da coleta.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>O sistema me avisa quando posso doar novamente?</summary>
+                    <div class="faq-conteudo">
+                        <p>Sim. O Sangue+ envia notificações de "Lembrete de elegibilidade" quando seu período de carência termina. Além disso, você pode receber lembretes de agendamento, alertas emergenciais sobre necessidade de sangue e notícias sobre campanhas.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Como entro em contato em caso de dúvidas ou problemas técnicos?</summary>
+                    <div class="faq-conteudo">
+                        <p>Você pode entrar em contato através do e-mail de suporte disponibilizado no final desta página.</p>
+                    </div>
+                </details>
+
+            </section>
+
+            <section class="secao-contato">
+                <div class="box-contato">
+                    <h2>Ainda precisa de ajuda?</h2>
+                    <p>Entre em contato com nosso suporte técnico.</p>
+                    <a href="mailto:suporte@sangueplus.com.br" class="btn-contato">Enviar E-mail</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <img class="gov-sp" src="../../assets/img/governo-sp-logo.png" alt="">
+        <p>© 2025 Posto de Saúde Vida Nova | Sistema desenvolvido pela equipe Sangue+</p>
+    </footer>
+
+
+</body>
+
+</html>

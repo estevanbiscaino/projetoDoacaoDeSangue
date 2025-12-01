@@ -1,0 +1,136 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* DEFINE AS FONT COLORS VERMELHAS */
+main h1,
+#infos div h1,
+.data .mes {
+    color: #b53636;
+}
+
+/* HEADER */
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* INFOS */
+#infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#infos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    width: 200px;
+    padding: 12px;
+    border-radius: 12px;
+
+    border: 2px solid #9f9f9f;
+    box-shadow: 0px 0px 6px rgb(215, 215, 215);
+    background: #ffffff;
+}
+
+#infos div h3,
+#infos div p {
+    text-align: center;
+    font-size: 16px;
+    color: #808080;
+}
+
+#infos div:last-child {
+    border: 2px solid #b53636;
+    background: #b5363607;
+}
+
+/* DOAÇÔES */
+/* #doacoes-realizadas {
+    border: 1px solid red;
+} */
+/* Título */
+#doacoes-realizadas > h2 {
+    margin-bottom: 14px;
+    padding: 4px;
+    border-bottom: 2px solid #808080;
+}
+
+/* Cards Doações */
+#cards-doacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Card */
+.card-doacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+
+    border-radius: 12px;
+    background: #ffffff;
+    border: 2px solid #9f9f9f;
+    box-shadow: 0px 0px 6px rgb(215, 215, 215);
+}
+
+/* Data */
+.card-doacao .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+
+    padding: 8px;
+    border-radius: 6px;
+    background: #f2f2f2;
+}
+
+/* Data - Dias */
+.data .dia {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+/* Data -  Meses */
+.data .mes {
+    font-weight: 600;
+    font-size: 14px;
+}
+/* Data - Ano */
+.data .ano {
+    font-size: 14px;
+    color: #808080;
+}
+
+/* Status */
+.card-doacao .status {
+    font-size: 12px;
+    font-weight: 800;
+    color: green;
+
+    padding: 4px 10px;
+    margin-left: auto;
+
+    border-radius: 40px;
+    background: rgba(0, 128, 0, 0.137);
+}
