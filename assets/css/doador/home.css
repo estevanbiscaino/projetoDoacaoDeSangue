@@ -79,9 +79,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
-    width: 30%;
+    width: 25rem;
     justify-content: center;
-    flex-shrink: 1; 
 }
 
 .hero-cards .card {
@@ -120,6 +119,17 @@ main {
 }
 
 /* ===== MOBILE ===== */
+@media (max-width: 1280px) {
+        .hero-img {
+        display: none;
+    }
+
+    main {
+        overflow: visible;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     nav li {
