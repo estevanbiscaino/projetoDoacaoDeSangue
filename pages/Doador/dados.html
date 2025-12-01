@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="../../assets/css/estrutura.css">
+    <link rel="stylesheet" href="../../assets/css/Doador/dados.css">
+    <link href='https://cdn.boxicons.com/3.0.5/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo-semfundo" src="../../assets/img/logositeraw.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+        
+        <a href="../Doador/dados.html">
+            <div id="userPerfil">
+                <p>Usuario</p>
+                <img class="perfil-foto" src="../../assets/img/foto-usuario.png" alt="Foto">
+            </div>
+        </a>
+
+        <!-- MENU HAMBURGUER -->
+        <div id="menu-burguer">
+            <input type="checkbox" id="menu-faketrigger">
+
+            <label for="menu-faketrigger" id="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="menu-mobile">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="historico.html">Histórico</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+
+        <!-- DADOS PESSOAIS!-->
+        <section id="perfil">
+            <!-- Header -->
+            <h1>Meu Perfil</h1>
+            <p>Manteha seus dados atualizados</p>
+
+            <div id="resumo">
+
+                <img src="../../assets/img/foto-usuario.png" alt="Foto-Perfil">
+                <h2>Nome do Doador</h2>
+                <p>Tipo O+</p>
+
+            </div>
+            <!-- ============================= -->
+
+            <div id="dados-pessoais">
+
+                <h2 class="titulo-sessao">Dados Pessoais</h2>
+
+                <!-- Nome Completo -->
+                <div class="nome-completo">
+                    <label for="nome-completo">Nome Completo</label>
+                    <input type="text" name="nome-completo" id="nome-completo" class="definitivo"
+                        value="Nome do Doador">
+                </div>
+
+
+                <div class="lado-esquerdo">
+                    <!-- CPF -->
+                    <div>
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" class="definitivo" value="123.456.789-12">
+                    </div>
+
+                    <!-- Sexo Biológico -->
+                    <div>
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo" class="definitivo">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="lado-direito">
+                    <!-- Data de Nascimento -->
+                    <div>
+                        <label for="data-nascimento">Data de Nascimento</label>
+                        <input type="text" name="data-nascimento" id="data-nascimento" class="definitivo"
+                            value="20/05/1995">
+                    </div>
+
+                    <!-- Peso -->
+                    <div>
+                        <label for="Peso">Peso (kg)</label>
+                        <input type="text" name="Peso" id="peso" placeholder="Ex: 70,8" value="80">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- ============================ -->
+
+        <section id="geral">
+
+            <div id="contato">
+                <h2 class="titulo-sessao">Contato</h2>
+
+                <div class="lado-esquerdo">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" value="emailDoador@dominio.com">
+                </div>
+                <div class="lado-direito">
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="14 99123-4567">
+                </div>
+            </div>
+
+
+            <div id="seguranca">
+
+                <h2 class="titulo-sessao">Acesso e Segurança</h2>
+
+                <p>Para sua segurança, a alteração de senha é feita via confirmação de e-maiil ou SMS.</p>
+                <button>Redefinir Senha</button>
+
+            </div>
+
+            <div id="botoes">
+                <button id="cancelar">CANCELAR</button>
+                <button id="salvar">SALVAR ALTERAÇÕES</button>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <img class="gov-sp" src="../../assets/img/governo-sp-logo.png" alt="">
+        <p>© 2025 Posto de Saúde Vida Nova | Sistema desenvolvido pela equipe Sangue+</p>
+    </footer>
+
+
+</body>
+
+</html>

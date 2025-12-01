@@ -65,6 +65,10 @@
     gap: 10px;
 }
 
+    a {
+        text-decoration: none;
+}
+
     .perfil-foto {
         border-radius: 50%;
         height: 20px;
