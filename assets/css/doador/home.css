@@ -13,7 +13,6 @@ main {
     align-items: center;
     padding: 40px 60px;
     height: 100%;
-    z-index: 2;
 }
 
 /* TEXTOS DO LADO ESQURDO */
@@ -25,7 +24,6 @@ main {
     gap: 20px;
     height: auto;
     justify-content: center;
-    flex-shrink: 1;
 }
 
 .hero-text h1 {
@@ -59,12 +57,11 @@ main {
     font-size: 25px;
 }
 
-/* IMAGEM DO DOADOR */
+/* IMAGEM ILUSTRATIVA */
 .hero-img {
     position: absolute;
     right: 35%;
     bottom: 0;
-    flex-shrink: 1;
 }
 
 .hero-img img {
