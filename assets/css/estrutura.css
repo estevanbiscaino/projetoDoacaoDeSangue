@@ -65,6 +65,11 @@
     gap: 10px;
 }
 
+    .perfil-foto {
+        border-radius: 50%;
+        height: 20px;
+    }
+
     /*MENU BURGUER */
 
     #menu-burguer {
